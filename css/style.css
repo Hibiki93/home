@@ -1,10 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700');
 ul {
     list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Muli', sans-serif;
 }
 
 .delay_07s {
     animation-delay: 0.7s;
     -webkit-animation-delay: 0.7s;
+}
+
+.mb_30 {
+    margin-bottom: 30px;
 }
 
 .mb_100 {
@@ -18,7 +33,7 @@ ul {
 .header {
     position: relative;
     text-align: center;
-    background: url(../img/background.jpg)center no-repeat;
+    background: url(../img/background.jpg) center no-repeat;
     background-size: cover;
     padding: 150px 0;
 }
@@ -45,19 +60,20 @@ ul {
     text-align: center;
     margin: 10px 0 0px;
     padding: 0;
-    list-style: none;
+    list-style: -o-linear-gradient();
 }
 
 .main-nav li {
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     margin: 0 1px;
 }
 
 .main-nav li a {
-    display: inline-block;
     color: #222222;
     text-transform: titlecase;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-decoration: none;
     line-height: 20px;
     margin: 17px 32px;
@@ -89,6 +105,40 @@ ul {
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
+}
+
+.search_container {
+    background-image: url(../img/indoor.jpg);
+    background-size: cover;
+}
+
+.search_list_item {
+    position: relative;
+}
+
+.white_shadow {
+    padding: 10px;
+    margin: 0px;
+}
+
+.white_shadow .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 90%;
+    background-color: black;
+    opacity: 0.3;
+    border-radius: 15px;
+}
+
+.white_shadow p,
+h4,
+i {
+    word-wrap: normal;
+    z-index: 10;
+    color: white;
 }
 
 .map img {
@@ -127,49 +177,122 @@ ul {
 
 .search_area {
     position: relative;
-    height: auto;
     background-color: white;
     box-shadow: 0 4px 5px -3px #ececec;
     border-radius: 15px;
 }
 
-.category_menu {
+.footer_area {
+    color: #10568f;
+    padding: 0px;
+    border-bottom: 1px solid #dddddd;
+    box-shadow: 0px -2px 4px 2px #ececec;
     position: relative;
-    width: 100%;
-    height: 400px;
+    background: #fff;
 }
 
-.category_item {
-    position: relative;
+.copywrite {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
-.category_item img {
-    position: relative;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 40%;
-    background-size: cover;
-    z-index: 1;
-}
-
-.category_item span {
-    z-index: 10;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #fdfdfd52;
-    opacity: 0.5;
-    height: 100%;
+.join_us_header {
     width: 100%;
 }
 
-.category_item h3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    z-index: 20;
+.main_view_container {
+    background-image: linear-gradient(#83dbfd, #10568f);
+    width: 100%;
+}
+
+.counter {
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+view {
+    float: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background: #0ebeff;
+    min-height: 250px;
+}
+
+.col-md-2.company_logo {
+    border: none;
+    border-right: 2px dotted #fff;
+}
+
+.company-sub-txt h4 {
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.company-sub-txt ul li {
+    display: inline;
+    font-size: 16px;
+    margin-right: 21px;
+    color: #000;
+}
+
+.company-sub-txt ul li {
+    font-size: 14px;
+    color: #fff;
+}
+
+.company-left-agile-text p {
+    font-size: 14px;
+    color: #000;
+}
+
+.company-right-agile-text img {
+    -webkit-box-shadow: 2px 6px 17px -4px rgb(0, 0, 0);
+    -moz-box-shadow: 2px 6px 17px -4px rgb(0, 0, 0);
+    box-shadow: 2px 6px 17px -4px rgb(0, 0, 0);
+}
+
+.outs-agile-buttn a {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.outs-agile-buttn a:hover {
+    color: #000;
+}
+
+.cover_img img {
+    object-fit: cover;
+    width: 100%;
+    /* height: 250px; */
+}
+
+.company_product_list {
+    height: 300px;
+}
+
+.company_product_list img {
+    width: 100%;
+}
+
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 25px;
+    font-size: 14px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
 }

@@ -1,0 +1,176 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home Bagus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <nav id="main-nav-outer" class="main-nav-outer nav nav-pills nav-justified">
+
+        <a href="index.html" class="nav-item nav-link">
+            <img class="small-logo" src="img/small_logo.png" alt>
+        </a>
+        <a href="search_result.html" class="nav-item nav-link">
+                Services
+            </a>
+        <a href="our_partner.html" class="nav-item nav-link">
+                Our Partner
+            </a>
+        <a href="join_us.html" class="nav-item nav-link active">
+                Join Us
+            </a>
+    </nav>
+
+    <div class="main_view_container">
+        <div class="join_us container">
+            <div class="join_us_header animated fadeInDown delay_07s">
+
+                <h1>Why us?</h1>
+                <div class="animated fadeInUp delay-1s">
+                    <h3>
+                        We are the malaysia No.1 home and deco online expo.
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row justify-content-around">
+                <div class="counter col-3 text-center">
+                    <div style="font-size:1rem;">
+                        <i class="fas fa-male" style="color:orange;"></i>
+                        <p class="count-text">Daily Visitor </p>
+                    </div>
+                    <p class="timer count-title count-number" style="font-size:1.5rem;" data-to="4000" data-speed="1500"></p>
+                </div>
+
+                <div class="counter col-3 text-center">
+                    <div style="font-size:1rem;">
+                        <i class="fas fa-project-diagram" style="color:red;"></i>
+                        <p class="count-text">Services</p>
+                    </div>
+                    <p class="timer count-title count-number" style="font-size:1.5rem;" data-to="4000" data-speed="1500"></p>
+                </div>
+
+                <div class="counter col-3 text-center">
+                    <div style="font-size:1rem;">
+                        <i class="fas fa-users" style="color:darkblue;"></i>
+                        <p class="count-text">Partner </p>
+                    </div>
+                    <p class="timer count-title count-number" style="font-size:1.5rem;" data-to="4000" data-speed="1500"></p>
+                </div>
+
+                <div class="counter col-3 text-center">
+                    <div style="font-size:1rem;">
+                        <i class="fas fa-check-circle" style="color:greenyellow;"></i>
+                        <p class="count-text">Deal </p>
+                    </div>
+                    <p class="timer count-title count-number" style="font-size:1.5rem;" data-to="4000" data-speed="1500"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- form -->
+        <div class="form-table-area mt_30">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="checkout_details_area mt-50 clearfix">
+                            <form action="#" method="post" id="joinUs" class="container">
+                                <div class="cart-title">
+                                    <h2>Join Us By Today</h2>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <input type="text" class="form-control" id="first_name" value="" placeholder="First Name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <input type="text" class="form-control" id="last_name" value="" placeholder="Last Name" required>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="text" class="form-control" id="company" placeholder="Company Name" value="">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" id="email" placeholder="Email" value="">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="text" class="form-control" id="street_address" placeholder="Address" value="">
+                                    </div>
+                                    <div class="col-3 mb-3">
+                                        <input type="text" class="form-control" id="city" placeholder="City" value="">
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <select id="inputState" class="form-control">
+                                                  <option selected>State</option>
+                                                  <option>Malaysia</option>
+                                                  <option>Singapore</option>
+                                                </select>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <input type="text" class="form-control" id="zipCode" placeholder="Zip Code" value="">
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <input type="text" class="form-control" id="phone_number" min="0" placeholder="Phone No" value="">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <textarea name="comment" class="form-control w-100" id="comment" cols="30" rows="10" placeholder="Leave a message"></textarea>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="custom-control custom-checkbox d-block mb-2">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2">I'm not a robot</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox d-block p-2">
+                                            <button class="btn sm-btn" onclick="submit()">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="footer_area clearfix">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Single Widget Area -->
+                <div class="col-12 col-lg-4">
+                    <div class="">
+                        <!-- Copywrite Text -->
+                        <p class="copywrite">
+                            Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved</p>
+                    </div>
+                </div>
+                <!-- Single Widget Area -->
+                <div class="col-12 col-lg-8 text-right">
+                    <div class="single_widget_area">
+                        <!-- Footer Menu -->
+                        <div class="footer_menu">
+                            <a href="join_us.html" class="btn">Join Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer section end -->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/join_us_page.js"></script>
+
+</html>
