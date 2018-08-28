@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -6,64 +7,683 @@
     <title>Home Bagus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="main.js"></script>
 </head>
 
 <body>
-    <nav id="main-nav-outer" class="main-nav-outer nav nav-pills nav-justified">
-
-        <a href="index.html" class="nav-item nav-link">
-            <img class="small-logo" src="img/small_logo.png" alt>
-        </a>
-        <a href="search_result.html" class="nav-item nav-link ">
-                Services
+    <nav class="navbar" id="navbar">
+        <div class="container-fluid d-none d-lg-block">
+            <a href="index.html" class="navbar-brand">
+                <img class="logo" src="img/small_logo.png" style="height: 30px;">
             </a>
-        <a href="our_partner.html" class="nav-item nav-link active">
-                Our Partner
-            </a>
-        <a href="join_us.html" class="nav-item nav-link ">
-                Join Us
-            </a>
-    </nav>
-
-    <div class="join_us container">
-        <h1>Why us?</h1>
-        <h3>
-            We are the malaysia No.1 home and deco online expo
-        </h3>
-
-        <div class="row">
-            <div class="counter col-3">
-                <h2 class="timer count-title count-number" data-to="300" data-speed="1500"></h2>
-                <p class="count-text">Clients</p>
-            </div>
-
-            <div class="counter col-3">
-                <i class="fas fa-project-diagram"></i>
-                <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
-                <p class="count-text">Project</p>
-            </div>
-
-            <div class="counter col-3">
-                <i class="fa fa-project-diagram"></i>
-                <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
-                <p class="count-text">Supplier</p>
-            </div>
-
-            <div class="counter col-3">
-                <i class="fas fa-check-circle"></i>
-                <h2 class=" timer count-title count-number " data-to="157 " data-speed="1500 "></h2>
-                <p class="count-text ">Deal</p>
+            <div class="float-right center-block">
+                <ul class="nav">
+                    <li>
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="our_partner.html">
+                            Our Partner
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="join_us.html">
+                            Join Us
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
+    <!-- mobile navbar -->
+    <nav class="mobile_nav d-block d-lg-none">
+        <!-- Navbar Brand -->
+        <div class="navbar_brand">
+            <a href="index.html">
+                <img src="img/small_logo.png" alt>
+            </a>
+        </div>
+        <!-- Navbar Toggler -->
+        <div class="navbar_toggler" data-toggle="sidebar" data-target="#sidebar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="show_sidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="overlay" onclick="show_sidebar()"></div>
+    </nav>
+    <!-- ##navbar## -->
+    <!-- side menu -->
+    <div class="sidebar navbar-sidebar" id="sidebar">
+        <ul class="navbar-nav">
+            <i class="fas fa-times" style="right: 5px;position: absolute;top: 5px; font-size: 24px" onclick="show_sidebar()"></i>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" style="margin-top: 40px;">
+                    <i class="fas fa-home"></i> Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="our_partner.html">
+                    <i class="fas fa-users"></i> Our Partner
+                </a>
+            </li>
+        </ul>
+        <div class="sidebar_button">
+            <p>BM|EN|中文</p>
+            <P>Malaysia No.1 Home and Deco Online</P>
+            <p>
+                Let your service & product simple to find by your client
+            </p>
+            <a class="btn" href="join_us.html">
+                <i class="fas fa-hands-helping"></i> Join Us
+            </a>
+
+        </div>
     </div>
+    <!-- side  menu end -->
+    <div class="">
+        <div class="partner_cover">
+            <div class="join_us container mt-4">
+                <div class="join_us_header animated fadeInDown delay_07s">
+                    <h3 class="text-white">Our Partner</h3>
+                    <p class="text-white">On Malaysia</p>
+                </div>
+                <div class="container align-items-center">
+                    <div class="row">
+                        <!-- join logo -->
+                        <div class="col-12 col-lg-6">
+                            <div class="row justify-content-around mt-5">
+                                <div class="counter col-3 text-center mb-3">
+                                    <div style="font-size:1rem;">
+                                        <i class="fas fa-laugh-beam fa-2x growing" style="color: #ffd971;"></i>
+                                    </div>
+                                </div>
+                                <div class="counter col-3 text-center mb-3">
+                                    <div style="font-size:1rem;">
+                                        <i class="fas fa-headset fa-2x growing" style="color:#ee6161;"></i>
+                                    </div>
+                                </div>
+                                <div class="counter col-3 text-center mb-3">
+                                    <div style="font-size:1rem;">
+                                        <i class="fas fa-dolly-flatbed fa-2x growing" style="color: #4db8ff;;"></i>
+                                    </div>
+                                </div>
+                                <div class="counter col-3 text-center mb-3">
+                                    <div style="font-size:1rem;">
+                                        <i class="fas fa-wrench fa-2x growing" style="color: #fffd7e;"></i>
+                                    </div>
+                                </div>
+                                <!-- join logo name -->
+                                <div class="col-3 text-center mb-3">
+                                    <div style="font-size:1rem;">
+                                        <p class="count-text mt_15 text-white">Happy Client</p>
+                                    </div>
+                                </div>
+                                <div class="col-3 text-center mb-3">
+                                    <div style="font-size:1rem;">
+                                        <p class="count-text mt_15 text-white">Services</p>
+                                    </div>
+                                </div>
+                                <div class="col-3 text-center mb-3">
+                                    <div style="font-size:1rem;">
+                                        <p class="count-text mt_15 text-white">Big Store</p>
+                                    </div>
+                                </div>
+                                <div class="col-3 text-center mb-3">
+                                    <div style="font-size:1rem;">
+                                        <p class="count-text mt_15 text-white">Customize</p>
+                                    </div>
+                                </div>
+                                <!-- join logo couter number -->
+                                <div class="col-3 text-center">
+                                    <div style="font-size:1rem;">
+                                        <p class="timer count-title count-number text-white" style="font-size:1.5rem;" data-to="4000" data-speed="1500"></p>
+                                    </div>
+                                </div>
+                                <div class="col-3 text-center">
+                                    <div style="font-size:1rem;">
+                                        <p class="timer count-title count-number text-white" style="font-size:1.5rem;" data-to="4000" data-speed="1500"></p>
+                                    </div>
+                                </div>
+                                <div class="col-3 text-center">
+                                    <div style="font-size:1rem;">
+                                        <p class="timer count-title count-number text-white" style="font-size:1.5rem;" data-to="4000" data-speed="1500"></p>
+                                    </div>
+                                </div>
+                                <div class="col-3 text-center">
+                                    <div style="font-size:1rem;">
+                                        <p class="timer count-title count-number text-white" style="font-size:1.5rem;" data-to="4000" data-speed="1500"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- join us logo end -->
+                        <div class="col-12 col-lg-6">
+                            <img src="img/map.png" style="width: 100%; height:200px; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_view_container mt_30">
+
+            <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
+                <!-- <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
+                    <i class="fas fa-hands-helping"></i>&nbsp; Partners</h3> -->
+                <div class="about-agile-text pb-lg-4 pb-md-3 pb-3 text-center">
+                    <form id="search-form">
+                        <div class="search">
+                            <input type="text" name="search" class="round" placeholder="Type Your Perfect Location Here...">
+                            <button class="search_button" type="submit">
+                                <i class="fas fa-search" style="color:black;"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- result -->
+                <div class="container">
+                    <div class="row align-items-start justify-items-start">
+
+                        <!-- single result -->
+                        <div class="col-12 col-md-6 col-lg-4 container company_box align-content-start">
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-4 company_logo">
+                                    <img src="img/index.png" alt>
+                                </div>
+                                <div class="col-8 padding_0 company_name text-left">
+                                    <a href="company_profile.html">
+                                        <h4 class>Company Abc</h4>
+                                    </a>
+                                    <p>
+                                        <i class="fas fas fa-globe-asia"></i> Web:
+                                        <a href="http://www.abc.com/">www.Abc.com</a>
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-phone-square"></i> Tel:
+                                        <a href="tel:601234567">60161234567</a>
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-map-marker-alt"></i> Cover Area :
+                                    </p>
+                                    <a href="tel:601234567">Kuala Lumpur, Perak, Melaka, Johor</a>
+                                </div>
+                                <!-- <div class="col-12 row cover_area" style="font-size:12px; line-height:1.rem;">
+                                        <div class="col-12">
+                                            <a href>
+                                                <i class="fab fa-whatsapp-square fa-2x grow"></i>
+                                            </a>
+                                            <a href>
+                                                <i class="fab fa-facebook-square fa-2x grow"></i>
+                                            </a>
+                                            <a href>
+                                                <i class="fab fa-facebook-messenger fa-2x grow"></i>
+                                            </a>
+                                        </div>
+                                    </div> -->
+                                <div class="col-12 container">
+                                    <div class="row padding_15">
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ##single result end## -->
+                        <!-- single result -->
+                        <div class="col-12 col-md-6 col-lg-4 container company_box align-content-start">
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-4 company_logo">
+                                    <img src="img/index.png" alt>
+                                </div>
+                                <div class="col-8 padding_0 company_name text-left">
+                                    <a href="company_profile.html">
+                                        <h4 class>Company Abc</h4>
+                                    </a>
+                                    <p>
+                                        <i class="fas fas fa-globe-asia"></i> Web:
+                                        <a href="http://www.abc.com/">www.Abc.com</a>
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-phone-square"></i> Tel:
+                                        <a href="tel:601234567">60161234567</a>
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-map-marker-alt"></i> Cover Area :
+                                    </p>
+                                    <a href="tel:601234567">Kuala Lumpur, Perak, Melaka, Johor</a>
+                                </div>
+                                <div class="col-12 container">
+                                    <div class="row padding_15">
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ##single result end## -->
+                        <!-- single result -->
+                        <div class="col-12 col-md-6 col-lg-4 container company_box align-content-start">
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-4 company_logo">
+                                    <img src="img/index.png" alt>
+                                </div>
+                                <div class="col-8 padding_0 company_name text-left">
+                                    <a href="company_profile.html">
+                                        <h4 class>Company Abc</h4>
+                                    </a>
+                                    <p>
+                                        <i class="fas fas fa-globe-asia"></i> Web:
+                                        <a href="http://www.abc.com/">www.Abc.com</a>
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-phone-square"></i> Tel:
+                                        <a href="tel:601234567">60161234567</a>
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-map-marker-alt"></i> Cover Area :
+                                    </p>
+                                    <a href="tel:601234567">Kuala Lumpur, Perak, Melaka, Johor</a>
+                                </div>
+                                <div class="col-12 container">
+                                    <div class="row padding_15">
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ##single result end## -->
+
+
+                        <!-- second row -->
+                        <!-- single result -->
+                        <div class="col-12 col-md-6 col-lg-4 container company_box align-content-start">
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-4 company_logo">
+                                    <img src="img/index.png" alt>
+                                </div>
+                                <div class="col-8 padding_0 company_name text-left">
+                                    <a href="company_profile.html">
+                                        <h4 class>Company Abc</h4>
+                                    </a>
+                                    <p>
+                                        <i class="fas fas fa-globe-asia"></i> Web:
+                                        <a href="http://www.abc.com/">www.Abc.com</a>
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-phone-square"></i> Tel:
+                                        <a href="tel:601234567">60161234567</a>
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-map-marker-alt"></i> Cover Area :
+                                    </p>
+                                    <a href="tel:601234567">Kuala Lumpur, Perak, Melaka, Johor</a>
+                                </div>
+                                <div class="col-12 container">
+                                    <div class="row padding_15">
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ##single result end## -->
+                        <!-- single result -->
+                        <div class="col-12 col-md-6 col-lg-4 container company_box align-content-start">
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-4 company_logo">
+                                    <img src="img/index.png" alt>
+                                </div>
+                                <div class="col-8 padding_0 company_name text-left">
+                                    <a href="company_profile.html">
+                                        <h4 class>Company Abc</h4>
+                                    </a>
+                                    <p>
+                                        <i class="fas fas fa-globe-asia"></i> Web:
+                                        <a href="http://www.abc.com/">www.Abc.com</a>
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-phone-square"></i> Tel:
+                                        <a href="tel:601234567">60161234567</a>
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-map-marker-alt"></i> Cover Area :
+                                    </p>
+                                    <a href="tel:601234567">Kuala Lumpur, Perak, Melaka, Johor</a>
+                                </div>
+                                <div class="col-12 container">
+                                    <div class="row padding_15">
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ##single result end## -->
+                        <!-- single result -->
+                        <div class="col-12 col-md-6 col-lg-4 container company_box align-content-start">
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-4 company_logo">
+                                    <img src="img/index.png" alt>
+                                </div>
+                                <div class="col-8 padding_0 company_name text-left">
+                                    <a href="company_profile.html">
+                                        <h4 class>Company Abc</h4>
+                                    </a>
+                                    <p>
+                                        <i class="fas fas fa-globe-asia"></i> Web:
+                                        <a href="http://www.abc.com/">www.Abc.com</a>
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-phone-square"></i> Tel:
+                                        <a href="tel:601234567">60161234567</a>
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-map-marker-alt"></i> Cover Area :
+                                    </p>
+                                    <a href="tel:601234567">Kuala Lumpur, Perak, Melaka, Johor</a>
+                                </div>
+                                <div class="col-12 container">
+                                    <div class="row padding_15">
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ##single result end## -->
+
+                        <!-- third row -->
+                        <!-- single result -->
+                        <div class="col-12 col-md-6 col-lg-4 container company_box align-content-start">
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-4 company_logo">
+                                    <img src="img/index.png" alt>
+                                </div>
+                                <div class="col-8 padding_0 company_name text-left">
+                                    <a href="company_profile.html">
+                                        <h4 class>Company Abc</h4>
+                                    </a>
+                                    <p>
+                                        <i class="fas fas fa-globe-asia"></i> Web:
+                                        <a href="http://www.abc.com/">www.Abc.com</a>
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-phone-square"></i> Tel:
+                                        <a href="tel:601234567">60161234567</a>
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-map-marker-alt"></i> Cover Area :
+                                    </p>
+                                    <a href="tel:601234567">Kuala Lumpur, Perak, Melaka, Johor</a>
+                                </div>
+                                <div class="col-12 container">
+                                    <div class="row padding_15">
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ##single result end## -->
+                        <!-- single result -->
+                        <div class="col-12 col-md-6 col-lg-4 container company_box align-content-start">
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-4 company_logo">
+                                    <img src="img/index.png" alt>
+                                </div>
+                                <div class="col-8 padding_0 company_name text-left">
+                                    <a href="company_profile.html">
+                                        <h4 class>Company Abc</h4>
+                                    </a>
+                                    <p>
+                                        <i class="fas fas fa-globe-asia"></i> Web:
+                                        <a href="http://www.abc.com/">www.Abc.com</a>
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-phone-square"></i> Tel:
+                                        <a href="tel:601234567">60161234567</a>
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-map-marker-alt"></i> Cover Area :
+                                    </p>
+                                    <a href="tel:601234567">Kuala Lumpur, Perak, Melaka, Johor</a>
+                                </div>
+                                <div class="col-12 container">
+                                    <div class="row padding_15">
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ##single result end## -->
+                        <!-- single result -->
+                        <div class="col-12 col-md-6 col-lg-4 container company_box align-content-start">
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-4 company_logo">
+                                    <img src="img/index.png" alt>
+                                </div>
+                                <div class="col-8 padding_0 company_name text-left">
+                                    <a href="company_profile.html">
+                                        <h4 class>Company Abc</h4>
+                                    </a>
+                                    <p>
+                                        <i class="fas fas fa-globe-asia"></i> Web:
+                                        <a href="http://www.abc.com/">www.Abc.com</a>
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-phone-square"></i> Tel:
+                                        <a href="tel:601234567">60161234567</a>
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-map-marker-alt"></i> Cover Area :
+                                    </p>
+                                    <a href="tel:601234567">Kuala Lumpur, Perak, Melaka, Johor</a>
+                                </div>
+                                <div class="col-12 container">
+                                    <div class="row padding_15">
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4 product_list padding_0">
+                                            <a href="company_profile.html">
+                                                <img src="img/product1.jpg" alt="product1">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ##single result end## -->
+                    </div>
+                </div>
+
+                <!-- navigation -->
+                <nav aria-label="Page navigation align-self-end" class="mt_30">
+                    <ul class="pagination pull-right">
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                Previous
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                1
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                2
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                3
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                Next
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer section -->
+        <footer class="footer_area clearfix mt_30">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Single Widget Area -->
+                    <div class="col-12 col-lg-4">
+                        <div class="">
+                            <!-- Copywrite Text -->
+                            <p class="copywrite">
+                                Copyright &copy;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script> All rights reserved</p>
+                        </div>
+                    </div>
+                    <!-- Single Widget Area -->
+                    <div class="col-12 col-lg-8 text-right">
+                        <div class="single_widget_area">
+                            <!-- Footer Menu -->
+                            <div class="footer_menu">
+                                <a href="join_us.html" class="btn">Join Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer section end -->
 
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
-<script src="js/bootstrap.min.js "></script>
-<script src="js/join_us_page.js "></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/join_us_page.js"></script>
 
 </html>

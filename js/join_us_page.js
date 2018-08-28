@@ -103,3 +103,23 @@ jQuery(function($) {
     $this.countTo(options);
   }
 });
+
+window.onscroll = function() {
+  myFunction();
+};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("fixed_top");
+  } else {
+    navbar.classList.remove("fixed_top");
+  }
+}
+
+function show_sidebar(e) {
+  $("#sidebar").toggleClass("show");
+  $(".overlay").toggleClass("show");
+}

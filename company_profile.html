@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -13,76 +14,391 @@
 </head>
 
 <body>
-    <nav id="main-nav-outer" class="main-nav-outer nav nav-pills nav-justified">
-
-        <a href="index.html" class="nav-item nav-link">
-            <img class="small-logo" src="img/small_logo.png" alt>
-        </a>
-        <a href="search_result.html" class="nav-item nav-link active">
-                Services
+    <nav class="navbar" id="navbar">
+        <div class="container-fluid d-none d-lg-block">
+            <a href="index.html" class="navbar-brand">
+                <img class="logo" src="img/small_logo.png" style="height: 30px;">
             </a>
-        <a href="our_partner.html" class="nav-item nav-link">
-                Our Partner
-            </a>
-        <a href="join_us.html" class="nav-item nav-link">
-                Join Us
-            </a>
+            <div class="float-right center-block">
+                <ul class="nav">
+                    <li>
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="our_partner.html">
+                            Our Partner
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="join_us.html">
+                            Join Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+    <!-- mobile navbar -->
+    <nav class="mobile_nav d-block d-lg-none">
+        <!-- Navbar Brand -->
+        <div class="navbar_brand">
+            <a href="index.html">
+                <img src="img/small_logo.png" alt>
+            </a>
+        </div>
+        <!-- Navbar Toggler -->
+        <div class="navbar_toggler" data-toggle="sidebar" data-target="#sidebar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="show_sidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="overlay" onclick="show_sidebar()"></div>
+    </nav>
+    <!-- ##navbar## -->
+    <!-- side menu -->
+    <div class="sidebar navbar-sidebar" id="sidebar">
+        <ul class="navbar-nav">
+            <i class="fas fa-times" style="right: 5px;position: absolute;top: 5px; font-size: 24px" onclick="show_sidebar()"></i>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" style="margin-top: 40px;">
+                    <i class="fas fa-home"></i> Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="our_partner.html">
+                    <i class="fas fa-users"></i> Our Partner
+                </a>
+            </li>
+        </ul>
+        <div class="sidebar_button">
+            <p>BM|EN|中文</p>
+            <P>Malaysia No.1 Home and Deco Online</P>
+            <p>
+                Let your service & product simple to find by your client
+            </p>
+            <a class="btn" href="join_us.html">
+                <i class="fas fa-hands-helping"></i> Join Us
+            </a>
 
-    <div class="main_view_container">
+        </div>
+    </div>
+    <!-- side  menu end -->
+
+    <div class="container-fuild mt-4">
         <div class="row">
-            <div class="col-12 cover_img">
-                <img src="img/headerpic.jpg">
-            </div>
-            <div class="container band">
+            <div class="container">
                 <div class="row">
-                    <h4>Company ABC</h4>
-                </div>
-            </div>
-            <div class="container company_description">
-                <div class="row">
-                    <p>I TECHNOLOGIES is specializing in providing CCTV alarm and keyphone products. Our company’s aim is to provide the latest technology security solution to help you in securing your property. Our years of experiences enable us to improve
-                        our customer services and knowledge of CCTV product in order to help our customers when selecting products. By using our products, we will help you decrease the risk of crime and develop the security system which will meet your
-                        needs. Our products include a wide range of electronic security surveillance system and solution mainly:- 1. Security Burglar Alarm System 2. CCTV Audio/Video Recorder System 3. Interphone and Doorphone System 4. Safe & Deposit
-                        Box 5. Hotel Door Electronic Control System 6. Automatic Gate/Barrier System 7. PABX Keyphone System 8. Door Access Control System 9. Fire Security Alarm System 10. Biometri/Proximinity Card Time Attendance System 11. P.A Sound
-                        System 12. GuardTour System We strive to achieve higher production level to fulfill customer’s satisfaction and promise will deliver the best quality of products with fair prices. Please do not hesitate to contact us for any enquiry.
-                        Our company is always your best choices. </p>
+                    <div class="col-12 col-lg-4 logo_img mt_15">
+                        <div class="company_logo mb_30">
+                            <img src="img/index.png" alt="Logo">
+                        </div>
+                        <div class="company_detail">
+                            <h4 class="text-dark">I TECHNOLOGIES</h4>
+                            <h6 class="text-dark">
+                                <i class="fas fa-globe-americas text-dark"></i>&nbsp; Website :
+                                <a href="#">&nbsp; www.Abc.com</a>
+                            </h6>
+                            <!-- social -->
+                            <div class="col-10 social_info d-flex justify-content-between text-dark padding_0 mb_30 mt_15">
+                                <a href="tel:6012345678">
+                                    <i class="fas fa-phone-square fa-2x text-primary grow" aria-hidden="true"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-envelope fa-2x text-primary grow" aria-hidden="true" data-toggle="modal" data-target="#exampleModalLong"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-facebook-square fa-2x text-primary grow" aria-hidden="true"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-facebook-messenger fa-2x text-primary grow" aria-hidden="true"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-whatsapp-square fa-2x text-primary grow" aria-hidden="true"></i>
+                                </a>
+                            </div>
+
+
+
+                            <!-- address -->
+                            <p class="text-dark">
+                                <i class="fas fa-map-marker-alt text-dark grow mt_30"></i>&nbsp; Address :
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#branch1" role="tab" aria-controls="branch1" aria-selected="true">Kuala Lumpur</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#branch2" role="tab" aria-controls="branch2" aria-selected="false">Perak</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#branch3" role="tab" aria-controls="branch3" aria-selected="false">Johor</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="a-tab" data-toggle="tab" href="#branch4" role="tab" aria-controls="branch1" aria-selected="true">Melaka</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <!-- single branch address -->
+                                    <div class="tab-pane fade show active container address_branch" id="branch1" role="tabpanel" aria-labelledby="branch1-tab">
+                                        <div class="row align-items-center">
+                                            <div class="col-4 text-center">
+                                                <a href="https://www.google.com/maps/search/?api=1&query=No.123 Block AbC , Taman ABC 2/7 , Jalan Abc ,12345 City,States">
+                                                    <p>Direction</p>
+                                                    <i class="fas fa-map-marked-alt text-dark fa-2x"></i>
+                                                </a>
+
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="row" style="margin-top:15px;">
+                                                    <div class="col-12">
+                                                        <p>No.123 Block AbC , Taman ABC 2/7 , Jalan Abc ,12345 City,States</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="text-dark">
+                                                            <i class="fas fa-phone-square text-dark"></i>&nbsp; Tel :
+                                                            <a href="#">&nbsp; 6012-345678</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="text-dark">
+                                                            <i class="fas fa-newspaper text-dark"></i>&nbsp; Fax :
+                                                            <a href="#">&nbsp; 6012-345678</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- single branch address -->
+                                    <div class="tab-pane fade container address_branch" id="branch2" role="tabpanel" aria-labelledby="branch2-tab">
+                                        <div class="row align-items-center">
+                                            <div class="col-4 text-center">
+                                                <a href="https://www.google.com/maps/search/?api=1&query=No.123 Block AbC , Taman ABC 2/7 , Jalan Abc ,12345 City,States">
+                                                    <p>Direction</p>
+                                                    <i class="fas fa-map-marked-alt text-dark fa-2x"></i>
+                                                </a>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="row" style="margin-top:15px;">
+                                                    <div class="col-12">
+                                                        <p>No.123 Block AbC , Taman ABC 2/7 , Jalan Abc ,12345 Perak,States</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="text-dark">
+                                                            <i class="fas fa-phone-square text-dark"></i>&nbsp; Tel :
+                                                            <a href="#">&nbsp; 6012-345678</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="text-dark">
+                                                            <i class="fas fa-newspaper text-dark"></i>&nbsp; Fax :
+                                                            <a href="#">&nbsp; 6012-345678</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- single branch address -->
+                                    <div class="tab-pane fade container address_branch" id="branch3" role="tabpanel" aria-labelledby="branch3-tab">
+                                        <div class="row align-items-center">
+                                            <div class="col-4 text-center">
+                                                <a href="https://www.google.com/maps/search/?api=1&query=No.123 Block AbC , Taman ABC 2/7 , Jalan Abc ,12345 City,States">
+                                                    <p>Direction</p>
+                                                    <i class="fas fa-map-marked-alt text-dark fa-2x"></i>
+                                                </a>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="row" style="margin-top:15px;">
+                                                    <div class="col-12">
+                                                        <p>No.123 Block AbC , Taman ABC 2/7 , Jalan Abc ,12345 Johor,States</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="text-dark">
+                                                            <i class="fas fa-phone-square text-dark"></i>&nbsp; Tel :
+                                                            <a href="#">&nbsp; 6012-345678</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="text-dark">
+                                                            <i class="fas fa-newspaper text-dark"></i>&nbsp; Fax :
+                                                            <a href="#">&nbsp; 6012-345678</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- single branch address -->
+                                    <div class="tab-pane fade container address_branch" id="branch4" role="tabpanel" aria-labelledby="branch4-tab">
+                                        <div class="row align-items-center">
+                                            <div class="col-4 text-center">
+                                                <a href="https://www.google.com/maps/search/?api=1&query=No.123 Block AbC , Taman ABC 2/7 , Jalan Abc ,12345 City,States">
+                                                    <p>Direction</p>
+                                                    <i class="fas fa-map-marked-alt text-dark fa-2x"></i>
+                                                </a>
+
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="row" style="margin-top:15px;">
+                                                    <div class="col-12">
+                                                        <p>No.123 Block AbC , Taman ABC 2/7 , Jalan Abc ,12345 Melaka,States</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="text-dark">
+                                                            <i class="fas fa-phone-square text-dark"></i>&nbsp; Tel :
+                                                            <a href="#">&nbsp; 6012-345678</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="text-dark">
+                                                            <i class="fas fa-newspaper text-dark"></i>&nbsp; Fax :
+                                                            <a href="#">&nbsp; 6012-345678</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </p>
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company_detail_1 col-12 col-lg-8 mb_30">
+                        <h3>Company Info</h3>
+                        <p class="mt_30" style="text-align:justify;">I TECHNOLOGIES is specializing in providing CCTV alarm and keyphone products. Our company’s aim is to provide the latest technology security solution to help you in securing your property. Our years of experiences enable us to
+                            improve our customer services and knowledge of CCTV product in order to help our customers when selecting products. By using our products, we will help you decrease the risk of crime and develop the security system which will
+                            meet your needs. Our products include a wide range of electronic security surveillance system and solution mainly:- 1. Security Burglar Alarm System 2. CCTV Audio/Video Recorder System 3. Interphone and Doorphone System 4.
+                            Safe & Deposit Box 5. Hotel Door Electronic Control System 6. Automatic Gate/Barrier System 7. PABX Keyphone System 8. Door Access Control System 9. Fire Security Alarm System 10. Biometri/Proximinity Card Time Attendance System
+                            11. P.A Sound System 12. GuardTour System We strive to achieve higher production level to fulfill customer’s satisfaction and promise will deliver the best quality of products with fair prices. Please do not hesitate to contact
+                            us for any enquiry. Our company is always your best choices.</p>
+
+                        <a href="#" data-toggle="modal" data-target="#exampleModal">Read More</a>
+
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="company_product_list container mb-30">
-            <div class="row padding-15">
-                <div class="col-12 mb-15 text-right">
-                    <a href="category-automotive.html">
-                        <h6>More Product</h6>
-                    </a>
+
+        <div class="company_product_list container mb_30">
+            <div class="row">
+                <div class="col-12 mb-15 padding_0 text-left">
+                    <h6>
+                        <i class="fas fa-toolbox"></i>&nbsp; Product</h6>
                 </div>
-                <div class="col-3 padding-0">
-                    <a href="product-details.html">
-                        <img src="img/product2.jpg">
-                    </a>
+
+                <div class="col-4 company_product_list">
+                    <div class="row">
+                        <div class="product_list">
+                            <img src="img/product1.jpg" alt="" />
+                            <div class="send_btn">
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                                    Ask Detail
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-3 padding-0">
-                    <a href="product-details.html">
-                        <img src="img/product1.jpg">
-                    </a>
+                <div class="col-4 company_product_list">
+                    <div class="row">
+                        <div class="product_list">
+                            <img src="img/product1.jpg" alt="" />
+                            <div class="send_btn">
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                                    Ask Detail
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-3 padding-0">
-                    <a href="product-details.html">
-                        <img src="img/product3.jpg">
-                    </a>
+                <div class="col-4 company_product_list">
+                    <div class="row">
+                        <div class="product_list">
+                            <img src="img/product1.jpg" alt="" />
+                            <div class="send_btn">
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                                    Ask Detail
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="company_product_list col-3 padding-0">
-                    <a href="product-details.html">
-                        <img src="img/product4.jpg">
-                        <span></span>
-                        <h4>More</h4>
-                    </a>
+
+
+            </div>
+        </div>
+
+        <!-- Popup Read More -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Company Info</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="line-height:1.5rem">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque ipsum dolorem sit aliquam animi accusamus? Nemo facere repellat dolorem similique earum minus recusandae dolorum vitae? Obcaecati excepturi nesciunt voluptatibus dicta aspernatur cum quisquam
+                        molestiae, assumenda consequatur omnis suscipit nostrum adipisci necessitatibus soluta voluptates et tempore. Iure, quo, voluptatibus doloribus quos quasi facilis, aspernatur officia voluptatum repellat molestias harum incidunt.
+                        Exercitationem consequatur quaerat similique inventore hic sequi excepturi voluptatum iusto vitae nulla perspiciatis, dicta consequuntur quo placeat commodi autem enim! Amet ab tempore ad. Facilis, sapiente! Doloribus omnis animi,
+                        voluptatum ad maxime neque dolorem amet porro esse modi dolorum, quibusdam nesciunt. I TECHNOLOGIES is specializing in providing CCTV alarm and keyphone products. Our company’s aim is to provide the latest technology security solution
+                        to help you in securing your property. Our years of experiences enable us to improve our customer services and knowledge of CCTV product in order to help our customers when selecting products. By using our products, we will help
+                        you decrease the risk of crime and develop the security system which will meet your needs. Our products include a wide range of electronic security surveillance system and solution mainly:- 1. Security Burglar Alarm System 2. CCTV
+                        Audio/Video Recorder System 3. Interphone and Doorphone System 4. Safe & Deposit Box 5. Hotel Door Electronic Control System 6. Automatic Gate/Barrier System 7. PABX Keyphone System 8. Door Access Control System 9. Fire Security
+                        Alarm System 10. Biometri/Proximinity Card Time Attendance System 11. P.A Sound System 12. GuardTour System We strive to achieve higher production level to fulfill customer’s satisfaction and promise will deliver the best quality
+                        of products with fair prices. Please do not hesitate to contact us for any enquiry. Our company is always your best choices.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
-
         </div>
+        <!--Hover Product Popup Form -->
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Leave A Message</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="col-12">
+                            <div class="col-12 mb-3">
+                                <input type="text" class="form-control" id="name" value="" placeholder="Name" required>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <input type="text" class="form-control" id="contactNum" placeholder="Contact Number" value="" required>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Email" value="" required>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <textarea name="comment" class="form-control w-100" id="comment" cols="30" rows="10" placeholder="Leave a message"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <!-- Footer section -->
         <footer class="footer_area clearfix">
